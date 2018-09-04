@@ -6,7 +6,7 @@
                 <div class="card-two">
                     <header>
                         <div class="avatar">
-                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                            <img src="<?=base_url()?>user_ussets/images/users/avatar-1.jpg" alt="Allison Walker" />
                         </div>
                     </header>
 

@@ -374,6 +374,7 @@
 </div>
 
  <!-- Amchart -->
+  <script src="<?=base_url()?>user_ussets/js/lib/jquery/jquery.min.js"></script>
      <script src="<?=base_url()?>user_ussets/js/lib/morris-chart/raphael-min.js"></script>
     <script src="<?=base_url()?>user_ussets/js/lib/morris-chart/morris.js"></script>
     <script src="<?=base_url()?>user_ussets/js/lib/morris-chart/dashboard1-init.js"></script>
@@ -390,10 +391,9 @@
     <script src="<?=base_url()?>user_ussets/js/lib/calendar-2/pignose.init.js"></script>
 <script src="<?=base_url()?>user_ussets/js/lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="<?=base_url()?>user_ussets/js/lib/owl-carousel/owl.carousel-init.js"></script>
-  <script src="<?=base_url()?>user_ussets/js/scripts.js"></script>
 
+--------------------------------------------------------------------------------------
 
-    <script src="<?=base_url()?>user_ussets/js/jquery.slimscroll.js"></script>
 
 
 

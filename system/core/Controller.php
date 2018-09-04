@@ -77,8 +77,11 @@ class CI_Controller {
 
 		$this->load =& load_class('Loader', 'core');
 		$this->load->initialize();
+		$this->lang->load('message','spanish'); 
 		log_message('info', 'Controller Class Initialized');
-		$this->lang->load('message','english');
+
+		
+
 	}
 
 	// --------------------------------------------------------------------

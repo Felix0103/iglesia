@@ -32,3 +32,7 @@ $lang['menu_dashboard']='';
 $lang['profile_updateprofile']='Update Profile';
 $lang['profile_timeline']='Timeline';
 $lang['profile_settings']='Settings';
+$lang['profile_location']='Location';
+$lang['profile_skillset']='Skill Set';
+
+

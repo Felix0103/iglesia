@@ -23,7 +23,7 @@
     <!--Custom JavaScript -->
     <script src="<?=base_url()?>user_ussets/js/custom.min.js"></script>
 
-    
+      <script src="<?=base_url()?>user_ussets/js/scripts.js"></script>
 
 </body>
 
