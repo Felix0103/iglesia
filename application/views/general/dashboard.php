@@ -392,7 +392,7 @@
 <script src="<?=base_url()?>user_ussets/js/lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="<?=base_url()?>user_ussets/js/lib/owl-carousel/owl.carousel-init.js"></script>
 
---------------------------------------------------------------------------------------
+
 
 
 

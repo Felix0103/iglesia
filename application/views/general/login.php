@@ -1,127 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
+    <title>Login V4</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>user_ussets/images/favicon.png">
-    <title><?=$title?></title>
-    <!-- Bootstrap Core CSS -->
-    <link href="<?=base_url()?>user_ussets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="<?=base_url()?>user_ussets/css/helper.css" rel="stylesheet">
-    <link href="<?=base_url()?>user_ussets/css/style.css" rel="stylesheet">
-    <link href="<?=base_url()?>user_ussets/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
-    <!--[if lt IE 9]>
-    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+<!--===============================================================================================-->  
+    <link rel="icon" type="<?=base_url()?>user_ussets/login/image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/animate/animate.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>user_ussets/login/css/main.css">
+<!--===============================================================================================-->
 </head>
+<body>
+    
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('<?=base_url()?>user_ussets/login/images/bg-01.jpg');">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+               
+                    <span class="login100-form-title p-b-49">
+                        Login
+                    </span>
 
-<body class="fix-header fix-sidebar">
-    <!-- Preloader - style you can find in spinners.css -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-    </div>
-    <!-- Main wrapper  -->
-    <div id="main-wrapper">
+                    <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
+                        <span class="label-input100">Username</span>
+                        <input class="input100" type="text" name="username" placeholder="Type your username">
+                        <span class="focus-input100" data-symbol="&#xf206;"></span>
+                    </div>
 
-        <div class="unix-login">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="login-content card">
-                            <div class="login-form">
-                                <h4>Login</h4>
-                                <form>
-                                    <div class="form-group">
-                                        <label>Email address</label>
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                                <input type="checkbox"> Remember Me
-                                            </label>
-                                        <label class="pull-right">
-                                                <a href="#" id="forgotpass">Forgotten Password?</a>
-                                        </label>
-
-                                    </div>
-                                    <button id="login" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
-                                    <div class="register-link m-t-15 text-center">
-                                        <p>Don't have account ? <a href="<?=base_url()?>pages/register"> Sign Up Here</a></p>
-                                    </div>
-                                </form>
-                            </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <span class="label-input100">Password</span>
+                        <input class="input100" type="password" name="pass" placeholder="Type your password">
+                        <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    </div>
+                    
+                    <div class="text-right p-t-8 p-b-31">
+                        <a href="#">
+                            Forgot password?
+                        </a>
+                    </div>
+                    
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <a  class="login100-form-btn" href="#">
+                                Login
+                            </a>
                         </div>
                     </div>
-                </div>
+
+                    <div class="txt1 text-center p-t-54 p-b-20">
+                        <span>
+                            Or Sign Up Using
+                        </span>
+                    </div>
+
+                    <div class="flex-c-m">
+                        <a href="#" class="login100-social-item bg1">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="login100-social-item bg2">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="login100-social-item bg3">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex-col-c p-t-155">
+                        <span class="txt1 p-b-17">
+                            Or Sign Up Using
+                        </span>
+
+                        <a href="#" class="txt2">
+                            Sign Up
+                        </a>
+                    </div>
+                
             </div>
         </div>
-
     </div>
-    <!-- End Wrapper -->
-    <!-- All Jquery -->
-    <script src="<?=base_url()?>user_ussets/js/lib/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="<?=base_url()?>user_ussets/js/lib/bootstrap/js/popper.min.js"></script>
-    <script src="<?=base_url()?>user_ussets/js/lib/bootstrap/js/bootstrap.min.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="<?=base_url()?>user_ussets/js/jquery.slimscroll.js"></script>
-    <!--Menu sidebar -->
-    <script src="<?=base_url()?>user_ussets/js/sidebarmenu.js"></script>
-    <!--stickey kit -->
-    <script src="<?=base_url()?>user_ussets/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
-    <script src="<?=base_url()?>user_ussets/js/custom.min.js"></script>
+    
 
-    <script src="<?=base_url()?>user_ussets/js/lib/sweetalert/sweetalert.min.js"></script>
-
-    <script >
-        function login()
-        {
-            
-            event.preventDefault();
-        }
-
-        $("#login").click(function (e) {
-            window.location.href="<?=base_url()?>pages/dashboard";
-            e.preventDefault();
-        });
-
-          $("#forgotpass").click(function(event) {
-                swal({
-                    title: "Reset your password",
-                    text: "Enter your email address and we will send you a link to reset your password.",
-                    type: "input",
-                    showCancelButton: true,
-                    closeOnConfirm: false,
-                    animation: "slide-from-top",
-                    inputPlaceholder: "Enter Your Email Address"
-                },
-                function(inputValue){
-                    if (inputValue === false) return false;
-                    if (inputValue === "") {
-                        swal.showInputError("You need to write your Email Address!");
-                        return false
-                    }
-                    swal("Success !!", "The password was sent your email:" + inputValue, "success");
-                });
-          }); 
+    <div id="dropDownSelect1"></div>
+    <script type="text/javascript">
+        var url_base="<?=base_url()?>";
     </script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/bootstrap/js/popper.js"></script>
+    <script src="<?=base_url()?>user_ussets/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="<?=base_url()?>user_ussets/login/js/main.js"></script>
 
 </body>
-
 </html>
